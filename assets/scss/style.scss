@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+/*=================================
+        Global Styles
+=================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    //font-family: 'Roboto Mono', monospace;
+    width: 50%;
+    margin: auto;
+}
+
+p{
+    margin-right: 50px;
+    justify-self: end;
+}
+
+.div-style{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    background: #d8d8d8;
+}
+
+.left-side{
+    justify-self: start;
+}
+
+/*=================================
+        Input Section Styles
+=================================*/
+
+.input{
+    .years{
+        display: flex;
+        align-items: center;
+        background: #345779;
+        color: #fff;
+        h2{
+            margin: 10px 10px 10px 5px;
+        }
+        label{
+            background: orange;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        }
+    }
+
+/*=================================
+            Big Button
+=================================*/
+
+section:nth-of-type(2){
+    text-align: center;
+    padding: 20px 0px;
+    input{
+        padding: 10px 150px;
+        background: #345779;
+        color: #fff;
+        font-size: 24px;
+        border:none;
+        border-radius: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

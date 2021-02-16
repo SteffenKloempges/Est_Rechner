@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommenssteuer-Berechnung</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <section class="input">
+        <div class="years">
+            <h2>Berechnung der Einkommenssteuer für:</h2>
+            <form action="">
+                <input type="radio" name="year" id="year2021">
+                <label for="">2021</label>
+                <input type="radio" name="year" id="year2020">
+                <label for="">2020</label>
+                <input type="radio" name="year" id="year2019">
+                <label for="">2019</label>
+            </form>
+        </div>
+        <div class="div-style">
+            <p>zu versteuerndes Einkommen:</p>
+            <input class="left-side" type="number" name="" id="incomeInput" placeholder="...in €">
+        </div>
+        <div class="div-style">
+            <p>Art der Veranlagung:</p>
+            <div class="radio">
+                <input type="radio" name="chooseIncome" id="singleIncome">
+                <label for="">Einzelveranlagung</label>
+                <br>
+                <input type="radio" name="chooseIncome" id="marriedIncome">
+                <label for="">Zusammenveranlagung</label>
+            </div>
+        </div>
+        <div class="div-style">
+            <p>Kirchensteuer:</p>
+            <form action="" class="left-side">
+                <select name="" id="churchTax">
+                    <option value="none">Keine</option>
+                    <option value="eight%">8% (Bayern)</option>
+                    <option value="nine%">9% (übrige)</option>
+                </select>
+            </form>
+        </div>
+    </section>
+    <section>
+        <input type="button" value="Berechnung" id="button" onclick=calc()>
+    </section>
+    <section class="output">
+        <div class="div-style">
+            <p>Einkommenssteuer:</p>
+            <p class="left-side" id="outputEST">???</p>
+        </div>
+        <div class="div-style">
+            <p>Kirchensteuer:</p>
+            <p class="left-side" id="outputCHURCH">???</p>
+        </div>
+        <div class="div-style">
+            <p>Gesamtbelastung:</p>
+            <p class="left-side" id="outputALL">???</p>
+        </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
